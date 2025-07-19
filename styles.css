@@ -7,5 +7,14 @@
     border: 2px dotted red;
 }
 
+:root {
+    --main-color: hsl(4, 100%, 67%);
+    --dark-blue: hsl(234, 29%, 20%);
+    --light-blue: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
