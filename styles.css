@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px dotted red;
+    border: 1px dotted red;
 }
 
 :root {
@@ -15,6 +15,92 @@
     --white: hsl(0, 0%, 100%);
 }
 
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+main {
+    flex: 1 ;
+    background-color: var(--white);
+    max-width: 375px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+.content-description, .content-list, .content-lists {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.content-lists {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.email-label {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.email-input {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid hsl(0, 0%, 75%);
+      border-radius: 8px;
+} 
+
+.subscribe-button {
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background: hsl(4, 100%, 67%);
+    box-shadow: 0 16px 32px rgba(255, 98, 87, 0.25);
+  }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
