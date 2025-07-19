@@ -21,8 +21,19 @@
             <li class="content-lists">And much more!</li>
           </ul>
           <div class="content-email"> Email address</div>
-          <div class="content-empty">email@company.com</div>
-          <button>Subscribe to monthly newsletter</button>
+          <form class="newsletter-form">
+            <div class="email-section">
+              <label for="email" class="email-label">Email address</label>
+              <input 
+                type="email" 
+                id="email" 
+                class="email-input" 
+                placeholder="email@company.com"
+                required
+              >
+            </div>
+            <button type="submit" class="subscribe-button">Subscribe to monthly newsletter</button>
+          </form>
         </div>
       </div>
     </main>
