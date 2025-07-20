@@ -101,7 +101,11 @@ main {
     box-shadow: 0 16px 32px rgba(255, 98, 87, 0.25);
   }
 
-  footer {
+.success-card {
+   display: none;
+}
+
+footer {
     width: 100%;
     padding: 20px;
   }
@@ -111,4 +115,6 @@ main {
     color: white; 
     text-align: center; 
 }
-.attribution a { color: var(--grey) }
+.attribution a { 
+    color: var(--grey) 
+}
