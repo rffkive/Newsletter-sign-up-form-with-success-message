@@ -35,9 +35,14 @@ main {
     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.25);
 }
 
-.card {
+.main-card {
     display: flex;
     flex-direction: column;
+}
+
+/*add .hide later*/
+.main-card {
+  display: none;
 }
 
 .content {
@@ -102,7 +107,8 @@ main {
   }
 
 .success-card {
-   display: none;
+   display: flex; /*switch to none later*/
+  flex-direction: column;
 }
 
 footer {
