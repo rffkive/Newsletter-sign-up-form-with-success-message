@@ -111,6 +111,16 @@ main {
   flex-direction: column;
 }
 
+.success-title {
+    font-size: 2.5em;
+}
+
+.success-description {
+    font-size: 1em;
+    line-height: 1.5;
+
+}
+
 .success-top {
   flex: 1;
   display: flex;
@@ -118,6 +128,8 @@ main {
   min-height: 100vh;
   justify-content: center;
   gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 
