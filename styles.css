@@ -40,8 +40,7 @@ main {
     flex-direction: column;
 }
 
-/*add .hide later*/
-.main-card {
+.main-card.hide {
   display: none;
 }
 
@@ -107,8 +106,12 @@ main {
   }
 
 .success-card {
-   display: flex; /*switch to none later*/
-  flex-direction: column;
+   display: none; 
+}
+
+.success-card.show {
+    display: flex;
+    flex-direction: column;
 }
 
 .success-title {
