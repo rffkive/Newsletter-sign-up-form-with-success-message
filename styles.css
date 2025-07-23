@@ -111,6 +111,18 @@ main {
   flex-direction: column;
 }
 
+.success-button {
+    margin: 20px;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+}
+
+
 footer {
     width: 100%;
     padding: 20px;
