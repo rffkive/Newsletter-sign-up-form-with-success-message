@@ -103,6 +103,7 @@ main {
     background: var(--dark-blue);
     color: white;
     cursor: pointer;
+    border: transparent;
 }
 
 .subscribe-button:hover {
@@ -175,13 +176,14 @@ main {
     .success-button:active {
         cursor: pointer;
         background-color: var(--main-color);
-        transform: translateY(1);
     }
 
     .success-button:hover {
         cursor: pointer;
         background-color: var(--main-color);
-        transform: translateY(1);
+        transform: translateY(-10%);
+        transition: transform 0.3s ease;
+        border: transparent;
     }
 }
 
