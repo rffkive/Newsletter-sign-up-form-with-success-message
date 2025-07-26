@@ -21,8 +21,9 @@ const successCard = document.querySelector(".success-card");
 
 function InputResult() {
     const email = emailInput.value.trim();
-    
-    if (email === '' ) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === '' || !emailPattern.test(email)) {
         console.log("empty");
     } else {
         console.log("next");
