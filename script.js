@@ -30,3 +30,10 @@ function InputResult() {
         successCard.classList.toggle('show');
     }
 }
+
+const successBtn = document.querySelector(".success-button");
+
+successBtn.addEventListener ('click', (e) => {
+    e.preventDefault();
+    console.log ("success button");
+});
