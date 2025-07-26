@@ -6,8 +6,27 @@
 
 const subsBtn = document.querySelector('.subscribe-button');
 
-subsBtn.addEventListener ('click', () => 
+subsBtn.addEventListener ('click', (e) => 
  {
+    e.preventDefault(); 
     console.log('share button 1');
+    InputResult ();
  }
 );
+
+const emailInput = document.querySelector(".email-input");
+const mainCard = document.querySelector(".main-card");
+const successCard = document.querySelector(".success-card");
+
+
+function InputResult() {
+    const email = emailInput.value.trim();
+    
+    if (email === '') {
+        console.log("empty");
+    } else {
+        console.log("next");
+        mainCard.classList.toggle('hide');
+        successCard.classList.toggle('show');
+    }
+}
