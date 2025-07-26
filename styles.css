@@ -111,6 +111,19 @@ main {
     box-shadow: 0 16px 32px rgba(255, 98, 87, 0.25);
   }
 
+.error-message {
+    display: none;
+    color: var(--main-color);
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.error-message.show {
+    display: block
+}
+
 .success-card {
    display: none;
     flex-direction: column;

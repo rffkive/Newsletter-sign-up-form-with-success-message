@@ -1,9 +1,3 @@
-// declare btn
-
-// click main button, go to success card.show and go to main.card.hide
-//click subsribce, vice versa/
-// check transition
-
 const subsBtn = document.querySelector('.subscribe-button');
 
 subsBtn.addEventListener ('click', (e) => 
@@ -17,7 +11,7 @@ subsBtn.addEventListener ('click', (e) =>
 const emailInput = document.querySelector(".email-input");
 const mainCard = document.querySelector(".main-card");
 const successCard = document.querySelector(".success-card");
-
+const errorMessage = document.querySelector("#error-message");
 
 function InputResult() {
     const email = emailInput.value.trim();
@@ -25,6 +19,10 @@ function InputResult() {
 
     if (email === '' || !emailPattern.test(email)) {
         console.log("empty");
+        errorMessage.classList.toggle('show');
+        emailInput.value = '';
+        emailInput.focus();
+        errorMessage.textContent = "Please insert a valid email";
     } else {
         console.log("next");
         mainCard.classList.toggle('hide');
