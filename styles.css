@@ -45,6 +45,10 @@ main {
   display: none;
 }
 
+.card-image img{
+    width: 100%;
+}
+
 .content {
     flex: 1;
     display: flex;
@@ -149,6 +153,11 @@ main {
     background: var(--dark-blue);
     color: white;
     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    
 }
 
 
