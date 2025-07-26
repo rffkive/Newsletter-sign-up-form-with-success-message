@@ -157,7 +157,32 @@ main {
 
 
 @media (min-width: 768px) {
-    
+    main {
+        padding: 20px;
+        max-width: fit-content;
+        flex: 0;
+        border-radius: 13px;
+    }
+    .main-card {
+        flex-direction: row-reverse;
+    }
+
+    .success-card {
+        width: 500px;
+        height: 400px;
+    }
+
+    .success-button:active {
+        cursor: pointer;
+        background-color: var(--main-color);
+        transform: translateY(1);
+    }
+
+    .success-button:hover {
+        cursor: pointer;
+        background-color: var(--main-color);
+        transform: translateY(1);
+    }
 }
 
 
