@@ -19,7 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-blue);
+    background-color: var(--light-blue);
     align-items: center;
     justify-content: center;
     padding: 20px;
