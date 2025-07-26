@@ -39,4 +39,6 @@ successBtn.addEventListener ('click', (e) => {
     console.log ("success button");
     mainCard.classList.remove('hide');
     successCard.classList.remove('show');
+    emailInput.value = '';
+    emailInput.focus ();
 });
