@@ -38,6 +38,7 @@ main {
 .main-card {
     display: flex;
     flex-direction: column;
+    z-index: 20;
 }
 
 .main-card.hide {
@@ -109,10 +110,13 @@ main {
    display: none;
     flex-direction: column;
     height: 100vh; 
+    visibility: hidden;
 }
 
 .success-card.show {
     display: flex;
+    visibility: visible;
+    z-index: 21;
 }
 
 .success-title {
