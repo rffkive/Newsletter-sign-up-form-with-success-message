@@ -22,7 +22,7 @@ const successCard = document.querySelector(".success-card");
 function InputResult() {
     const email = emailInput.value.trim();
     
-    if (email === '') {
+    if (email === '' ) {
         console.log("empty");
     } else {
         console.log("next");
@@ -36,4 +36,6 @@ const successBtn = document.querySelector(".success-button");
 successBtn.addEventListener ('click', (e) => {
     e.preventDefault();
     console.log ("success button");
+    mainCard.classList.remove('hide');
+    successCard.classList.remove('show');
 });
